@@ -18,12 +18,7 @@ export class _Blank extends React.Component {
     title: "Blank".toUpperCase()
   }
 
-  state = {
-    Datepicker_2: new Date("07/03/2020"),
-    Radio_4: true,
-    CheckBox_5: true,
-    Input_2: ""
-  }
+  state = { Datepicker_2: new Date("07/03/2020"), Radio_4: true, Input_2: "" }
 
   render = () => (
     <View
@@ -147,33 +142,6 @@ export class _Blank extends React.Component {
         }}
         checked={this.state.Radio_4}
         onChange={nextChecked => this.setState({ Radio_4: nextChecked })}
-      />
-      <CheckBox
-        text="Checkbox"
-        disabled={false}
-        style={{
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: 5,
-          marginBottom: 5,
-          paddingLeft: 5,
-          paddingRight: 5,
-          paddingTop: 5,
-          paddingBottom: 5,
-          overflow: "visible",
-          textAlign: "left",
-          verticalAlign: "baseline",
-          borderColor: "#000000",
-          borderStyle: "solid",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          borderRightWidth: 0,
-          borderTopWidth: 0,
-          borderBottomWidth: 0,
-          borderRadius: 0
-        }}
-        checked={this.state.CheckBox_5}
-        onChange={nextChecked => this.setState({ CheckBox_5: nextChecked })}
       />
       <Input
         placeholder="Sample text input placeholder"
